@@ -7,7 +7,7 @@ export class Flickr{
   images = [];
   url = 'http://api.flickr.com/services/feeds/photos_public.gne?tags=mountain&tagmode=any&format=json';
 
-  constructor(http){
+  constructor(private http: HttpClient){
     this.http = http;
   }
 
