@@ -2,16 +2,14 @@
     "compilerOptions": {
         "target": "es5",
         "module": "amd",
+        "outDir": "dist",
         "declaration": false,
         "noImplicitAny": false,
         "removeComments": false,
-        "noLib": true,
+        "noLib": false,
 		"sourceMap": true,
+        "isolatedModules": true,
         "experimentalDecorators": true,
         "experimentalAsyncFunctions": true
-    },
-    "filesGlob": [
-        "./**/*.ts",
-        "!./node_modules/**/*.ts"
-    ]
+    }
 }

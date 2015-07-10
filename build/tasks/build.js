@@ -8,7 +8,7 @@ var paths = require('../paths');
 var compilerOptions = require('../babel-options');
 var assign = Object.assign || require('object.assign');
 
-var ts = require('gulp-typescript');
+//var ts = require('gulp-typescript');
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -18,18 +18,18 @@ gulp.task('build-system', function () {
   return gulp.src(paths.source)
     .pipe(plumber())
     .pipe(changed(paths.output, {extension: '.ts'}))
-    .pipe(ts({
-        noImplicitAny: false,
-        outDir: paths.output,
-        target: 'ES5',
-        module: 'amd',
-        typescript: require('typescript'),
-        experimentalAsyncFunctions: true,
-        experimentalDecorators: true
-      }))
-    //.pipe(sourcemaps.init({loadMaps: true}))
-    //.pipe(to5(assign({}, compilerOptions, {modules:'system'})))
-    //.pipe(sourcemaps.write({includeContent: true}))
+    // .pipe(ts({
+    //     noImplicitAny: false,
+    //     outDir: paths.output,
+    //     target: 'ES5',
+    //     module: 'amd',
+    //     typescript: require('typescript'),
+    //     experimentalAsyncFunctions: true,
+    //     experimentalDecorators: true
+    //   }))
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(to5(assign({}, compilerOptions, {modules:'system'})))
+    .pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output));
 });
 
@@ -48,6 +48,14 @@ gulp.task('build', function(callback) {
   return runSequence(
     'clean',
     ['build-system', 'build-html'],
+    callback
+  );
+});
+
+gulp.task('build-ts', function(callback) {
+  return runSequence(
+    'clean',
+    ['build-html'],
     callback
   );
 });

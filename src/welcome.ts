@@ -10,16 +10,16 @@ export class Welcome {
   //However, if you tell Aurelia the dependencies, it no longer needs to dirty check the property.
   //To optimize by declaring the properties that this getter is computed from, uncomment the line below.
   //@computedFrom('firstName', 'lastName')
-  get fullName(){
+  get fullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
-  submit(){
+  submit(): void {
     this.previousValue = this.fullName;
     alert(`Welcome, ${this.fullName}!`);
   }
 
-  canDeactivate() {
+  canDeactivate(): boolean {
     if (this.fullName !== this.previousValue) {
       return confirm('Are you sure you want to leave?');
     }
@@ -27,7 +27,7 @@ export class Welcome {
 }
 
 export class UpperValueConverter {
-  toView(value){
+  toView(value: string): string {
     return value && value.toUpperCase();
   }
 }
