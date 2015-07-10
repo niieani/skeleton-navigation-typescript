@@ -50,6 +50,7 @@
   },
   "jspm": {
     "dependencies": {
+      "Semantic-Org/Semantic-UI": "github:Semantic-Org/Semantic-UI@next",
       "aurelia-animator-css": "github:aurelia/animator-css@^0.3.0",
       "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.13.0",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.8.1",
