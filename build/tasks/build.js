@@ -27,9 +27,9 @@ gulp.task('build-system', function () {
         experimentalAsyncFunctions: true,
         experimentalDecorators: true
       }))
-    // .pipe(sourcemaps.init({loadMaps: true}))
-    // .pipe(to5(assign({}, compilerOptions, {modules:'system'})))
-    // .pipe(sourcemaps.write({includeContent: false, sourceRoot: paths.sourceMapRelativePath }))
+    //.pipe(sourcemaps.init({loadMaps: true}))
+    //.pipe(to5(assign({}, compilerOptions, {modules:'system'})))
+    //.pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output));
 });
 
