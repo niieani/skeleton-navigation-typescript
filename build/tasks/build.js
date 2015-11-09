@@ -9,7 +9,7 @@ var assign = Object.assign || require('object.assign');
 var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var ts = require('gulp-typescript');
-var tsProject = ts.createProject('tsconfig.json');
+var tsProject = ts.createProject('tsconfig.json', {"noExternalResolve": true});
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused

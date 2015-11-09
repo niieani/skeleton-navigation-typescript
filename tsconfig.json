@@ -7,8 +7,7 @@
     "emitDecoratorMetadata": true,
     "listFiles": true,
     "outDir": "dist-es6",
-    "removeComments": true,
-    "noExternalResolve": true
+    "removeComments": true
   },
   "exclude": [
     "dist",
