@@ -9,9 +9,11 @@ module.exports = {
   sourceES6: 'dist-es6' + '**/*.js',
   html: appRoot + '**/*.html',
   css: 'src-scss/**/*.*css',
-  style: 'styles/**/*.css',
+  style: 'styles/',
   output: outputRoot,
   doc: './doc',
   e2eSpecsSrc: 'test/e2e/src/*.js',
-  e2eSpecsDist: 'test/e2e/dist/'
+  e2eSpecsDist: 'test/e2e/dist/',
+  jspmDef: "jspm_packages/**/*.d.ts",
+  typingDef: "typings/**/*.d.ts",
 };
