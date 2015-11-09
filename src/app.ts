@@ -1,5 +1,11 @@
+/// <reference path="../jspm_packages/github/aurelia/router@0.13.0/aurelia-router.d.ts"/>
+
+import * as router from 'aurelia-router';  
 export class App {
-  configureRouter(config, router) {
+
+  private router: router.RouteConfig;
+
+  configureRouter(config, router: router.RouteConfig) {
     config.title = 'Aurelia';
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },

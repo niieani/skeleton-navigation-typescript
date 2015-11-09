@@ -7,11 +7,11 @@
     "emitDecoratorMetadata": true,
     "listFiles": true,
     "outDir": "dist-es6",
-    "removeComments": false
+    "removeComments": true,
+    "noExternalResolve": true
   },
   "exclude": [
     "dist",
-    "node_modules",
-    "jspm_packages"
+    "node_modules"
   ]
 }

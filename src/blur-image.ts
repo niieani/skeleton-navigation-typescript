@@ -1,9 +1,10 @@
+/// <reference path="../jspm_packages/github/aurelia/framework@0.17.0/aurelia-framework.d.ts"/>
+
 import {inject} from 'aurelia-framework';
 
 @inject(Element)
 export class BlurImageCustomAttribute {
-  constructor(element) {
-    this.element = element;
+  constructor(private element){
   }
 
   valueChanged(newImage) {

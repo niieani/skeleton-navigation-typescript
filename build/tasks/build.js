@@ -9,15 +9,14 @@ var assign = Object.assign || require('object.assign');
 var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var ts = require('gulp-typescript');
-
+var tsProject = ts.createProject('tsconfig.json');
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
 // by errors from other gulp plugins
 // https://www.npmjs.com/package/gulp-plumber
 gulp.task('build-system', function () {
-  var tsProject = ts.createProject('tsconfig.json');
-  return gulp.src(paths.source)
+  return gulp.src([paths.jspmDef, paths.typingDef, paths.source])
     .pipe(plumber({errorHandler: notify.onError("<%= error.message %>")}))
     .pipe(changed(paths.output))
     .pipe(sourcemaps.init({loadMaps: true}))
@@ -50,8 +49,8 @@ gulp.task('build-css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write('.'))
-    .pipe(changed(paths.output, {extension: '.css'}))
-    .pipe(gulp.dest(paths.output));
+    .pipe(changed(paths.output, {extension: '.scss'}))
+    .pipe(gulp.dest(paths.style));
 });
 
 // this task calls the clean task (located
