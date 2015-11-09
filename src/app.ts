@@ -1,6 +1,6 @@
 /// <reference path="../jspm_packages/github/aurelia/router@0.13.0/aurelia-router.d.ts"/>
 
-import * as router from 'aurelia-router';  
+import * as router from 'aurelia-router';
 export class App {
 
   private router: router.RouteConfig;
