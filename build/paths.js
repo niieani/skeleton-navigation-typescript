@@ -1,12 +1,15 @@
+var path = require('path');
+
 var appRoot = 'src/';
 var outputRoot = 'dist/';
 var exporSrvtRoot = 'export/'
 
 module.exports = {
   root: appRoot,
-  source: appRoot + '**/*.js',
+  source: appRoot + '**/*.ts*',
+  sourceES6: 'dist-es6' + '**/*.js',
   html: appRoot + '**/*.html',
-  css: appRoot + '**/*.css',
+  css: 'src-scss/**/*.*css',
   style: 'styles/**/*.css',
   output: outputRoot,
   exportSrv: exporSrvtRoot,

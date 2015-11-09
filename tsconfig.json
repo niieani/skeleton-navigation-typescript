@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "experimentalAsyncFunctions": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "listFiles": true,
+    "outDir": "dist-es6",
+    "removeComments": false
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "jspm_packages"
+  ]
+}
