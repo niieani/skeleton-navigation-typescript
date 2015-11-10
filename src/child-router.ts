@@ -1,11 +1,11 @@
 /// <reference path="../jspm_packages/github/aurelia/router@0.13.0/aurelia-router.d.ts"/>
 
-import * as router from 'aurelia-router';
+import {RouterConfiguration, RouteConfig} from 'aurelia-router';
 export class ChildRouter {
   heading = 'Child Router';
-  private router: router.RouteConfig;
+  private router: RouteConfig;
 
-  configureRouter(config, router: router.RouteConfig) {
+  configureRouter(config:RouterConfiguration, router: RouteConfig) {
     config.map([
       { route: ['', 'welcome'], name: 'welcome',       moduleId: 'welcome',       nav: true, title: 'Welcome' },
       { route: 'users',         name: 'users',         moduleId: 'users',         nav: true, title: 'Github Users' },
