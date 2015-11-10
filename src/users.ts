@@ -10,7 +10,7 @@ export class Users {
   heading = 'Github Users';
   users = [];
 
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient) {
     http.configure(config => {
       config
         .useStandardConfiguration()
