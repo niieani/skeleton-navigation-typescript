@@ -7,7 +7,7 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
 
-  "map": {
+  map: {
     "aurelia-animator-css": "github:aurelia/animator-css@0.18.0",
     "aurelia-binding": "github:aurelia/binding@0.11.0",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.19.0",
@@ -241,7 +241,7 @@ System.config({
     "npm:babel-runtime@5.8.29": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:core-js@1.2.6": {
+    "npm:brace-expansion@1.1.1": {
       "balanced-match": "npm:balanced-match@0.2.1",
       "concat-map": "npm:concat-map@0.0.1"
     },
@@ -344,8 +344,9 @@ System.config({
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:core-js@0.9.18": {
+    "npm:core-js@1.2.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -654,4 +655,3 @@ System.config({
     }
   }
 });
-
