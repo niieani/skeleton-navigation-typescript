@@ -1,6 +1,3 @@
-/// <reference path="../jspm_packages/github/aurelia/framework@0.17.0/aurelia-framework.d.ts"/>
-/// <reference path="../jspm_packages/github/aurelia/fetch-client@0.3.0/aurelia-fetch-client.d.ts"/>
-
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
 import 'fetch';

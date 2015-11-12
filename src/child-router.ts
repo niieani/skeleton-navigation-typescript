@@ -1,5 +1,3 @@
-/// <reference path="../jspm_packages/github/aurelia/router@0.13.0/aurelia-router.d.ts"/>
-
 import {RouterConfiguration, RouteConfig} from 'aurelia-router';
 export class ChildRouter {
   heading = 'Child Router';

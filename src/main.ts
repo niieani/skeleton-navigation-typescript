@@ -1,5 +1,3 @@
-/// <reference path="../jspm_packages/github/aurelia/framework@0.17.0/aurelia-framework.d.ts"/>
-
 import 'regenerator/runtime';
 import 'bootstrap';
 import {Aurelia} from 'aurelia-framework';
