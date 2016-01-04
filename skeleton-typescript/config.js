@@ -1,6 +1,5 @@
 System.config({
   defaultJSExtensions: true,
-  transpiler: "none",
   paths: {
     "*": "dist/*",
     "github:*": "jspm_packages/github/*",
