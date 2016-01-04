@@ -11,14 +11,14 @@
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation-typescript/issues"
+    "url": "https://github.com/niieani/skeleton-navigation-typescript/issues"
   },
   "license": "CC0-1.0",
   "author": "Mike Graham <mgraham@technicalmedia.com> (http://cmichaelgraham.io/)",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation-typescript"
+    "url": "http://github.com/niieani/skeleton-navigation-typescript"
   },
   "scripts": {
     "test": "gulp test",
@@ -49,12 +49,12 @@
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
     "karma-systemjs": "^0.10.0",
-    "typescript": "^1.7.3",
     "object.assign": "^4.0.3",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
     "systemjs": "^0.19.9",
     "tslint": "^3.2.1",
+    "typescript": "^1.8.0-dev.20160104",
     "vinyl-paths": "^2.1.0",
     "yargs": "^3.31.0"
   },

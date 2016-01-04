@@ -1,16 +1,15 @@
 {
-  "version": "1.7.3",
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": "src/",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es6",
     "module": "amd",
     "declaration": false,
     "noImplicitAny": false,
     "noResolve": true,
     "removeComments": true,
-    "noLib": false,
+    "noLib": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
