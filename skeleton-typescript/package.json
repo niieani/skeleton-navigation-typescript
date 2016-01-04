@@ -27,6 +27,7 @@
   "devDependencies": {
     "aurelia-bundler": "^0.3.0",
     "aurelia-tools": "^0.1.18",
+    "bourbon": "^4.2.6",
     "browser-sync": "^2.11.0",
     "conventional-changelog": "0.5.3",
     "del": "^2.2.0",
@@ -37,6 +38,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-protractor": "^2.1.0",
+    "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-tslint": "^4.2.2",
     "gulp-typescript": "^2.10.0",

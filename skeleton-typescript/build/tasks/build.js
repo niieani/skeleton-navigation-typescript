@@ -7,6 +7,10 @@ var paths = require('../paths');
 var assign = Object.assign || require('object.assign');
 var notify = require("gulp-notify");
 var typescript = require('gulp-tsb');
+var tsc = require('typescript');
+var sass = require('gulp-sass');
+
+var tsProject = typescript.createProject('./tsconfig.json', { typescript: tsc });
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -35,8 +39,13 @@ gulp.task('build-html', function() {
 // copies changed css files to the output directory
 gulp.task('build-css', function() {
   return gulp.src(paths.css)
-    .pipe(changed(paths.output, {extension: '.css'}))
-    .pipe(gulp.dest(paths.output));
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      includePaths: require("bourbon").includePaths
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(changed(paths.cssDist, {extension: '.css'}))
+    .pipe(gulp.dest(paths.cssDist));
 });
 
 // this task calls the clean task (located
