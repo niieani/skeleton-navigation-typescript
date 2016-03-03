@@ -7,9 +7,8 @@
     "module": "amd",
     "declaration": false,
     "noImplicitAny": false,
-    "noResolve": true,
     "removeComments": true,
-    "noLib": true,
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },

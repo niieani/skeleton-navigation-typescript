@@ -7,10 +7,7 @@ var paths = require('../paths');
 var assign = Object.assign || require('object.assign');
 var notify = require("gulp-notify");
 var typescript = require('gulp-tsb');
-var tsc = require('typescript');
 var sass = require('gulp-sass');
-
-var tsProject = typescript.createProject('./tsconfig.json', { typescript: tsc });
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -18,8 +15,10 @@ var tsProject = typescript.createProject('./tsconfig.json', { typescript: tsc })
 // https://www.npmjs.com/package/gulp-plumber
 var typescriptCompiler = typescriptCompiler || null;
 gulp.task('build-system', function() {
-  if(!typescriptCompiler) {
-    typescriptCompiler = typescript.create(require('../../tsconfig.json').compilerOptions);
+  if (!typescriptCompiler) {
+    const compilerOptions = require('../../tsconfig.json').compilerOptions;
+    delete compilerOptions.moduleResolution;
+    typescriptCompiler = typescript.create(compilerOptions);
   }
   return gulp.src(paths.dtsSrc.concat(paths.source))
     .pipe(plumber())
