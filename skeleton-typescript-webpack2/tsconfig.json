@@ -1,0 +1,40 @@
+{
+  "version": "1.8.9",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": "src/",
+    "sourceMap": true,
+    // in production use es6+babel for tree shaking
+    // "target": "es6",
+    // "module": "es2015",
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "noResolve": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "./typings/browser.d.ts",
+    "./custom_typings/**/*.d.ts",
+    "./node_modules/aurelia-*/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "awesomeTypescriptLoaderOptions": {
+    // "useBabel": true, // use when target ES6 with tree-shaking
+    "doTypeCheck": false
+  }
+}

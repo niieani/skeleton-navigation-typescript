@@ -1,0 +1,20 @@
+{
+  "name": "aurelia-skeleton-navigation-typescript",
+  "ambientDependencies": {
+    "angular-protractor": "github:DefinitelyTyped/DefinitelyTyped/angular-protractor/angular-protractor.d.ts#24e12a7af994afa2226af70fbfae0adc78736a9e",
+    "aurelia-bootstrapper-webpack": "npm:aurelia-bootstrapper-webpack",
+    "aurelia-event-aggregator": "npm:aurelia-event-aggregator",
+    "aurelia-fetch-client": "npm:aurelia-fetch-client",
+    "aurelia-framework": "npm:aurelia-framework",
+    "aurelia-history-browser": "npm:aurelia-history-browser",
+    "aurelia-logging-console": "npm:aurelia-logging-console",
+    "aurelia-pal-browser": "npm:aurelia-pal-browser",
+    "aurelia-polyfills": "npm:aurelia-polyfills",
+    "aurelia-templating-binding": "npm:aurelia-templating-binding",
+    "aurelia-templating-resources": "npm:aurelia-templating-resources",
+    "aurelia-templating-router": "npm:aurelia-templating-router",
+    "es6-promise": "github:DefinitelyTyped/DefinitelyTyped/es6-promise/es6-promise.d.ts#24e12a7af994afa2226af70fbfae0adc78736a9e",
+    "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#16cfc9e52eec782859fc91b413e9866640651395",
+    "selenium-webdriver": "github:DefinitelyTyped/DefinitelyTyped/selenium-webdriver/selenium-webdriver.d.ts#24e12a7af994afa2226af70fbfae0adc78736a9e"
+  }
+}
