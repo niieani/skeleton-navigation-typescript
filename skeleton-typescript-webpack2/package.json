@@ -4,7 +4,7 @@
   "description": "A starter kit for building a standard navigation-style app with Aurelia and Webpack 2.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js --inline --progress",
+    "dev": "webpack-dev-server --config webpack.config.js --inline --hot --progress --devtool eval",
     "build": "webpack --config webpack.config.js --progress --profile",
     "prod": "webpack -p --config webpack.prod.config.js --progress --devtool source-map",
     "test": "karma start",
