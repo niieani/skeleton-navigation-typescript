@@ -49,10 +49,11 @@ section {
   margin: 0 20px;
 }
 
+/*
 .navbar-nav li.loader {
   margin: 12px 24px 0 6px;
 }
-
+*/
 .pictureDetail {
   max-width: 425px;
 }
@@ -69,6 +70,7 @@ div.au-stagger {
   animation-delay: 50ms;
 }
 
+/*
 .card-container.au-enter {
   opacity: 0 !important;
 }
@@ -102,7 +104,6 @@ div.au-stagger {
 }
 
 .card .header-bg {
-  /* This stretches the canvas across the entire hero unit */
   position: absolute;
   top: 0;
   left: 0;
@@ -126,7 +127,7 @@ div.au-stagger {
   border-radius: 50%;
   border: 2px #FFF solid;
 }
-
+*/
 /* animation definitions */
 @-webkit-keyframes fadeInRight {
   0% {

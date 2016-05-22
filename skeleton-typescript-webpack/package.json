@@ -60,7 +60,6 @@
   "homepage": "https://github.com/aurelia/skeleton-navigation#readme",
   "aurelia": {
     "resources": [
-      "materialize",
       "aurelia-materialize-bridge",
       "aurelia-materialize-bridge/dist/commonjs/index",
       "aurelia-materialize-bridge/dist/commonjs/badge/badge",
@@ -145,7 +144,8 @@
     "font-awesome": "^4.6.1",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^2.2.3",
-    "materialize": "^1.0.0",
+    "material-design-icons": "^2.2.3",
+    "materialize-css": "^0.97.6",
     "regenerator-runtime": "^0.9.5",
     "ts-helpers": "^1.1.1"
   },
