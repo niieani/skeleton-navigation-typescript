@@ -88,7 +88,9 @@ module.exports = {
     modules: [helpers.root('src'), 'node_modules'],
 
     // use es2015 builds so that tree-shaking will work
-    alias: meta.aliases,
+    alias: Object.assign(meta.aliases, {
+      "aurelia-materialize-bridge": helpers.root('node_modules/aurelia-materialize-bridge/dist/commonjs')
+    }),
 
   },
 
@@ -212,14 +214,9 @@ module.exports = {
   plugins: [
 
     new AureliaWebpackPlugin({
-      moduleType: 'commonjs',
+      moduleType: 'es2015',
       root: helpers.root('.'),
       src: helpers.root('src'),
-      
-      // if you wish to include all files belonging to a module, list it here: //
-      includeSubModules: [
-        {moduleId: 'aurelia-materialize-bridge'}
-      ],
       
       /*
       // if you wish to make additional modules visible or alias them
