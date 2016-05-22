@@ -212,16 +212,15 @@ module.exports = {
   plugins: [
 
     new AureliaWebpackPlugin({
-      moduleType: 'es2015',
+      moduleType: 'commonjs',
       root: helpers.root('.'),
       src: helpers.root('src'),
-      /*
+      
       // if you wish to include all files belonging to a module, list it here: //
       includeSubModules: [
-        {moduleId: 'aurelia-dialog'},
-        {moduleId: 'aurelia-validatejs'},
+        {moduleId: 'aurelia-materialize-bridge'}
       ],
-      */
+      
       /*
       // if you wish to make additional modules visible or alias them
       // so that they can be loaded dynamically from within aurelia, list them here:

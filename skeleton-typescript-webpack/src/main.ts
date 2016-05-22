@@ -7,7 +7,8 @@ import 'font-awesome/css/font-awesome.css';
 bootstrap((aurelia: Aurelia): void => {
   aurelia.use
     .standardConfiguration()
-    .developmentLogging();
+    .developmentLogging()
+    .plugin('aurelia-materialize-bridge', bridge => bridge.useAll())
 
   const rootElem = document.body;
   aurelia.start().then(() => aurelia.setRoot('app', rootElem));
