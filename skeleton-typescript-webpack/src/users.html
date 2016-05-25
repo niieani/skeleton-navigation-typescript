@@ -3,19 +3,10 @@
 
   <section class="au-animate">
     <h2>${heading}</h2>
-    <div class="row au-stagger">
-      <div class="col-sm-6 col-md-3 card-container au-animate" repeat.for="user of users">
-        <div class="card">
-          <canvas class="header-bg" width="250" height="70" blur-image.bind="image"></canvas>
-          <div class="avatar">
-            <img src.bind="user.avatar_url" crossorigin ref="image"/>
-          </div>
-          <div class="content">
-            <p class="name">${user.login}</p>
-            <p><a target="_blank" class="btn btn-default" href.bind="user.html_url">Contact</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="md-row au-stagger">
+      <md-card md-title.bind="user.login" class="au-animate" repeat.for="user of users">
+        <img md-box src.bind="user.avatar_url" crossorigin ref="image"/><br />
+        <p><a md-button target="_blank" href.bind="user.html_url">Contact</a></p>
+      </md-card>
   </section>
 </template>

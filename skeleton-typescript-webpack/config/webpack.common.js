@@ -89,7 +89,8 @@ module.exports = {
 
     // use es2015 builds so that tree-shaking will work
     alias: Object.assign(meta.aliases, {
-      "aurelia-materialize-bridge": helpers.root('node_modules/aurelia-materialize-bridge/dist/commonjs')
+      'aurelia-materialize-bridge': helpers.root('node_modules/aurelia-materialize-bridge/dist/commonjs'),
+      'materialize': 'materialize-css/dist/css/materialize.css' 
     }),
 
   },
@@ -184,6 +185,7 @@ module.exports = {
        */
       {
         test: /\.css$/,
+        include: [helpers.root('node_modules'), helpers.root('src')],
         loaders: ['style', 'css']
       },
 
