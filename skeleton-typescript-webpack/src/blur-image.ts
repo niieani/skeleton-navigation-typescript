@@ -1,6 +1,12 @@
-import {inject} from 'aurelia-framework';
+import {inject, autoinject} from 'aurelia-framework';
 
-@inject(Element)
+/// <reference path="../node_modules/typescript/lib/lib.dom.d.ts" />
+declare var Element: {
+    prototype: Element;
+    new(): Element;
+}
+// @inject(Element)
+@autoinject
 export class BlurImageCustomAttribute {
   constructor(public element: Element) { }
 

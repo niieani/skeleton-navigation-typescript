@@ -132,6 +132,7 @@ switch (ENV) {
 
       require('@easy-webpack/config-aurelia')
         ({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
+      // require('@easy-webpack/config-source-map-support')({ browser: true }),
 
       require('@easy-webpack/config-typescript')(),
       require('@easy-webpack/config-html')(),
@@ -140,7 +141,7 @@ switch (ENV) {
         ({ filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false }),
 
       require('@easy-webpack/config-fonts-and-images')(),
-      require('@easy-webpack/config-global-bluebird')(),
+      // require('@easy-webpack/config-global-bluebird')(),
       require('@easy-webpack/config-global-jquery')(),
       require('@easy-webpack/config-global-regenerator')(),
       require('@easy-webpack/config-generate-index-html')

@@ -1,6 +1,12 @@
 <template>
+  <!--<require from="./dynamic-expression-binding-behavior"></require>
+  <require from="./wtf"></require>-->
+  <!--<require from="./super-resource"></require>-->
+  <require from="./test"></require>
   <section class="au-animate">
+    <!--<h2>${heading & dynamicExpression : one : two}</h2>-->
     <h2>${heading}</h2>
+    <test></test>
     <form role="form" submit.delegate="submit()">
       <div class="form-group">
         <label for="fn">First Name</label>
@@ -12,7 +18,7 @@
       </div>
       <div class="form-group">
         <label>Full Name</label>
-        <p class="help-block">${fullName | upper}</p>
+        <p class="help-block">${fullName | upper : one : two : 'three'}</p>
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
