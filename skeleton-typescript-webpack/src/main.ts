@@ -118,6 +118,8 @@ export async function configure(aurelia: Aurelia) {
   };
   viewResources.registerViewEngineHooks(hooks);
 
+  // try ViewEngine hooks as a require? can it be made as such?
+
   // Uncomment the line below to enable animation.
   // aurelia.use.plugin('aurelia-animator-css');
   // if the css animator is enabled, add swap-order="after" to all router-view elements
